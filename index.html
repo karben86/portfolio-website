@@ -2,19 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
     <title>My Portfolio Site</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1 class="title">Ben's Portfolio Site</h1>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<p>Welcome to my website.</p>
-<h2>Past Experience</h2>
-<ul>
-    <li>Northcoders Student. 2020 - 2021</li>
-    <li>IT Trainer specialising in Microsoft Office and VBA. 2015 - 2020</li>
-</ul>
-</body>
+    <h1 class="title" style="text-align:center"> Ben's Portfolio Site</h1>
+    
+    <nav role="navigation">
+      <div id="hamburger">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="hamburgerMenu">
+              <li><a href="index.html">Home</a></li>
+              <li class="">
+                  <div tabindex="0" class="onclick-menu">Portfolio▾
+                      <ul class="onclick-menu-content">
+                          <li><a href="VBAProjects.html">VBA Projects</a></li>
+                          <li><a href="JavaScriptProjects.html">JavaScript Projects</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div id="menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a>Portfolio▾</a>
+          <ul class="dropdown">
+            <li><a href="VBAProjects.html">VBA Projects</a></li>
+            <li><a href="JavaScriptProjects.html">JavaScript Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<br>
+<br>
+<br>
+<h4 style="text-align:center"><p>Hello and welcome to my portfolio page.</p>
+  <p>I am Benjamin Karst, a full stack junior developer with experience in VBA freelance work.</p></h4>
+<br>
+<div style="text-align:center">
+    <p>
+        <h2>Past Experience</h2>
+        <p>2020 - Present
+        <br>
+        Northcoders Student (Web Development Bootcamp).</p>
+        <p>
+        2015 - 2020
+        <br>
+        IT Trainer specialising in Microsoft Office and VBA.</p>
+        <p>
+        2010 - 2015<br>
+        Working for Morgan Stanley in Finance. Invited to be a firm representative of Excel/VBA specialists and provide links between IT and Finance.</p>
+        <p>
+        2009 - 2010<br>
+        Student at Universität Augsburg (Maths & Computer Science).</p>
+    </p>
+    <br>
+    <p>
+        <h2>Skills</h2>
+        <img src="./images/Skills.jpg" alt="Tech Skills: HTML, CSS, JavaScript, PSQL, NodeJs, VBA" style="width:50%;height:10%;"></p>
+    </p>
+</div>
+    </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>About</title>
+</head>
+<body>
+    <h1 class="title" style="text-align:center">JavaScript Projects</h1>
+    
+    <nav role="navigation">
+      <div id="hamburger">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="hamburgerMenu">
+              <li><a href="index.html">Home</a></li>
+              <li class="">
+                  <div tabindex="0" class="onclick-menu">Portfolio▾
+                      <ul class="onclick-menu-content">
+                          <li><a href="VBAProjects.html">VBA Projects</a></li>
+                          <li><a href="JavaScriptProjects.html">JavaScript Projects</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div id="menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a>Portfolio▾</a>
+          <ul class="dropdown">
+            <li><a href="VBAProjects.html">VBA Projects</a></li>
+            <li><a href="JavaScriptProjects.html">JavaScript Projects</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<h2 style="text-align:center"><p>Featured Work</p></h2>
+<br>
+<br>
+<h3 style="text-align:center">API Server for Northcoders</h3>
+<br>
+<h3 style="text-align:center">Description</h3>
+<p style="text-align:center">The aim of this project was to design an API for the purpose of accessing news data programmatically similarly to a service such as reddit. This information should then be available to the front end architecture via standard http methods.</p>
+<br>
+<br>
+<br>
+
+<div class="row">
+  <div class="column"> 
+      <h3 style="width:100%;">Tech Stack</h3>
+      <p style="width:100%;">
+        The database containing the news data was PSQL which I interacted with using Knex. For testing I used Jest and Supertest and the server was hosted on Heroku.
+      </p>
+  </div>
+  <div class="column">
+      <img src="./images/NC1.jpg" alt="Tech Stack for API Server: Heroku, Jest, Supertest, PSQL, Knex.js" style="width:100%;">
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+      <img src="./images/NC2.jpg" alt="Result of GET request on api/topics" style="width:100%;">
+  </div>
+  <div class="column">
+      <h3 style="width:100%;">Features</h3>
+      <ul style="width:100%;">
+        <li>Endpoints for each table in the database (topics, articles, users and comments)</li>
+        <li>Endpoints send responses in an object with a key name of what it is that is being sent as per the screenshot on the left hand side.</li>
+        <li>Some endpoints accept queries such as sorting and filtering features.</li>
+      </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column"> 
+    <ul style="width:100%;">
+      <li>Endpoints are controlled using error handlers that produce the associated http status code and an appropriate error message</li>
+      <li>The server is built using strict MVC principles making it easy to identify problems and adding functionality over time</li>
+  </ul>
+  </div>
+  <div class="column">
+      <img src="./images/NC3.jpg" alt="Example of error message on incorrect route api/posts showing status 404 and message 'Route not found'" style="width:100%;">
+  </div>
+</div>
+
+</body>
+</html>

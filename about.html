@@ -7,11 +7,63 @@
     <title>About</title>
 </head>
 <body>
-    <h1 class="title">About</h1>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <img src="/images/WhatsApp Image 2019-07-05 at 6.31.41 PM.jpeg" alt="image of me">
-    <p>Hello, my name is Ben and I am a Northcoders student.</p>
-    <a href="https://github.com/karben86">My Github</a>
+    <h1 class="title" style="text-align:center"> About</h1>
+    
+    <nav role="navigation">
+      <div id="hamburger">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="hamburgerMenu">
+              <li><a href="index.html">Home</a></li>
+              <li class="">
+                  <div tabindex="0" class="onclick-menu">Portfolio▾
+                      <ul class="onclick-menu-content">
+                          <li><a href="VBAProjects.html">VBA Projects</a></li>
+                          <li><a href="JavaScriptProjects.html">JavaScript Projects</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+    <div id="menu">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a>Portfolio▾</a>
+            <ul class="dropdown">
+              <li><a href="VBAProjects.html">VBA Projects</a></li>
+              <li><a href="JavaScriptProjects.html">JavaScript Projects</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <br>
+    <div>
+        <p style="float: right;"><img src="./images/Me3.jpg" alt="Benjamin Karst" style="width:100%;height:100%;"></p>
+        <p>
+            <br>
+            <br>
+            <h2 style="text-align:center">About Benjamin Karst</h2>
+            <p>I have been fascinated by programming since my parents got their first computer. Figuring out little puzzles or making technology work for me rather than accepting what I was given always seemed like an exciting skill but it took until my late 20s for me to tiptoe into this field. During my career I have been a dance teacher, an accountant and a director of a foreign language school before I started out as an IT trainer over 5 years ago. I consulted for various companies over this period and built smaller applications in VBA but wanted to try out programming on a more serious scale and doing the web development bootcamp by Northcoders was the natural step to kick start my career. Please check out my portfolio site to find out more about some of the projects I have been working on so far.</p>
+        </p>
+    </div>
+    <br>
+    <h4 style="text-align:center"><i> Email: benjaminkarst86@gmail.com</i></h4>
+    <p style="text-align:center">
+        <a href="https://github.com/karben86">My Github</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/benjamin-karst">My Linkedin</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://twitter.com/KarstBenjamin">My Twitter</a>
+        </p>
 </body>
 </html>
